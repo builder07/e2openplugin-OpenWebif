@@ -45,7 +45,7 @@ except:  # noqa: E722
 STATICBOXINFO = None
 
 def getFriendlyImageDistro():
-	dist = getImageDistro().replace("openatv", "OpenATV").replace("openhdf", "OpenHDF").replace("openpli", "OpenPLi").replace("openvix", "OpenViX")
+	dist = getImageDistro().replace("openatv", "OpenATV").replace("openhdf", "OpenHDF").replace("openpli", "OpenPLi").replace("openvix", "OpenViX").replace("openfix", "OpenFIX")
 	return dist
 
 
