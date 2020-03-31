@@ -428,9 +428,18 @@ def getAllInfo():
 		elif procmodel.startswith("sf"):
 			brand = "Octagon"
 			model = procmodel
+		elif procmodel.startswith("ustym"):
+			brand = "uclan"
+			model = procmodel
 		elif procmodel == "ustym4kpro":
-		        brand = "Uclan"
-		        model = procmodel
+			brand = "Uclan"
+			model = procmodel
+		elif procmodel == "ebox5000":
+			brand = "gi9196m"
+			model = procmodel
+		elif procmodel == "ebox5100":
+			brand = "gi9196lite"
+			model = procmodel
 		elif procmodel == "e4hd":
 			brand = "Axas"
 			model = "E4HD"
@@ -538,6 +547,10 @@ def getAllInfo():
 		remote = "vu_normal_02"
 	elif procmodel == "e3hd":
 		remote = "e3hd"
+	elif procmodel == "ebox5000":
+		remote = "ebox5000"
+	elif procmodel == "ebox5100":
+		remote = "ebox5100"
 	elif procmodel in ("et9x00", "et9000", "et9100", "et9200", "et9500"):
 		remote = "et9x00"
 	elif procmodel in ("et5x00", "et5000", "et6x00", "et6000"):
@@ -646,6 +659,8 @@ def getAllInfo():
                 remote = "viperslim"
         elif procmodel.startswith("sf"):
 		remote = "octagon"
+        elif procmodel.startswith("ustym"):
+		remote = "uclan"
         elif procmodel == "ustym4kpro":
                 remote = "uclan"
 	elif procmodel in ("vs1100", "vs1500"):
